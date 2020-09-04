@@ -1,0 +1,32 @@
+.title {
+  position: relative;
+  width: grid(5);
+
+  text-transform: uppercase;
+
+  font-family: var(--font-1);
+  color: var(--brown);
+  @extend .font-md;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 52%;
+    height: 2px;
+
+    top: 5px;
+    right: 20px;
+
+    background: var(--brown);
+    margin-top: 14px;
+  }
+
+  @include mediaQuery(md) {
+    width: 100%;
+    display: block;
+    font-size: var(--font-normal);
+
+    margin-bottom: 20px;
+  } 
+}

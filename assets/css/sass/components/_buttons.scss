@@ -1,0 +1,22 @@
+.button {
+  width: 200px;
+  height: 45px;
+
+  cursor: pointer;
+  padding: 8px 16px;
+
+  background: transparent;
+  color: var(--dark-gray);
+  border: 2px solid var(--secondary);
+
+  font-family: var(--font-1);
+  font-size: var(--font-normal);
+  text-transform: uppercase;
+
+  @include box-shadow(5px 5px 0 -2px var(--secondary), 5px 5px 0 0 var(--dark-gray));
+  transition: 0.3s;
+
+  &:hover {
+    @include box-shadow(3px 3px 0 -2px var(--secondary), 3px 3px 0 0 var(--dark-gray));
+  }
+}

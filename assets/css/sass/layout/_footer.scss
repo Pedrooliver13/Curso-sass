@@ -1,0 +1,18 @@
+.copy {  
+  background-color: var(--brown);
+  color: var(--primary);
+  
+  padding: 20px 15px;
+  text-align: center;
+
+  @include box-shadow(0 0 0 10px var(--brown));
+
+  div {
+    @extend .flex-center;
+    justify-content: space-between;
+
+    @include mediaQuery(sm) {
+      flex-direction: column;
+    }
+  }
+}

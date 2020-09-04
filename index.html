@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>le-Scone</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|PT+Mono"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="section-main">
+        <div class="section-main__content">
+          <div class="section-main__logo">
+            <a href="/">
+              <img src="./assets/img/lescone.png" alt="Logo da les-cone" />
+            </a>
+          </div>
+
+          <div class="section-main__info">
+            <p>
+              De Seg. à Sab. <span class="js-disponivel"></span> <br />
+              das 07:00h às 18:00h
+            </p>
+
+            <p>
+              Praia de Botafogo, 300 <br />
+              Rio de Janeiro - Rj
+            </p>
+          </div>
+          <div class="section-main__call">+55 021 2412-3333</div>
+        </div>
+
+        <img
+          class="section-main__image"
+          src="./assets/img/foto.png"
+          alt="Foto do Chef"
+        />
+      </section>
+
+      <section class="section-menu">
+        <header class="title">
+          <h1>Menu</h1>
+        </header>
+
+        <div class="section-menu__cards">
+          <div class="card-menu">
+            <div class="card-menu__content">
+              <h1 class="card-menu__title">Entradas</h1>
+
+              <ul class="card-menu__list">
+                <li><span class="price">R$1,70</span> Ovos Mexidos</li>
+                <li><span class="price">R$1,70</span> Scones de Frutas</li>
+                <li><span class="price">R$1,70</span> Joelho de Queijo</li>
+                <li><span class="price">R$1,70</span> Presunto Cozido</li>
+                <li><span class="price">R$1,70</span> Coxinha de Frango</li>
+              </ul>
+            </div>
+
+            <div class="card-menu__image">
+              <img src="./assets/img/prato-1.png" alt="" />
+            </div>
+          </div>
+          <!-- /card-menu -->
+
+          <div class="card-menu">
+            <div class="card-menu__content">
+              <h1 class="card-menu__title">Pratos Principais</h1>
+
+              <ul class="card-menu__list">
+                <li><span class="price">R$ 1,70</span> Penne com Queijo</li>
+                <li><span class="price">R$ 1,70</span> Feijoada</li>
+                <li><span class="price">R$ 1,70</span> Costela ao Molho</li>
+                <li><span class="price">R$ 1,70</span> Medalhão de Frango</li>
+                <li><span class="price">R$ 1,70</span> Coxinha de Frango</li>
+              </ul>
+            </div>
+
+            <div class="card-menu__image">
+              <img src="./assets/img/prato-2.png" alt="" />
+            </div>
+          </div>
+          <!-- /card-menu -->
+        </div>
+      </section>
+
+      <section class="section-contato">
+        <header class="title">
+          <h1>Contato</h1>
+        </header>
+
+        <div>
+          <form>
+            <div class="section-contato__item">
+              <label for="name">Nome</label>
+              <input class="input" type="text" name="name" id="name" />
+            </div>
+
+            <div class="row">
+              <div class="section-contato__item">
+                <label for="email">email</label>
+                <input class="input" type="email" name="email" id="email" />
+              </div>
+              
+              <div class="section-contato__item">
+                <label for="phone">Telefone</label>
+                <input class="input" type="phone" name="phone" id="phone" />
+              </div>
+            </div>
+
+            <div class="section-contato__item">
+              <label for="mensage">Mensagem</label>
+              <textarea
+                name="mensage"
+                id="mensage"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <input class="button" type="button" value="Enviar" />
+          </form>
+
+          <div class="section-contato__info">
+            <p>contato@lescone.com ////</p>
+            <p>+55 021 2412-3333 ////</p>
+          </div>
+
+          <div class="section-contato__image">
+            <img src="./assets/img/map.png" alt="Mapa do restaurante">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="copy">
+      <div class="container">
+        <p>le Scone &copy; 1989 - 2016. Alguns direitos reservados</p>
+
+        <img src="./assets/img/lescone-icone.png" alt="Logo Marca" />
+      </div>
+    </footer>
+  </body>
+</html>
