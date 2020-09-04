@@ -8,7 +8,7 @@
     display: block;
   }
   
-  .section-contato__item {
+  &__item {
     margin-bottom: 20px;
 
     & + .section-contato__item {
@@ -20,7 +20,7 @@
     }
   }
 
-  .section-contato__info {
+  &__info {
     display: block;
     float: right;
     clear: both;
@@ -38,7 +38,7 @@
     }
   }
 
-  .section-contato__image img{
+  &__image img{
     width: 100%;
     margin: 40px auto;
     border: var(--border-bold) var(--secondary);

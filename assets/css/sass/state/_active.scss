@@ -1,0 +1,14 @@
+span.js-disponivel {
+  display: inline-block;
+  
+  width: 12px;
+  height: 12px;
+  margin-left: 20px;
+
+  background: var(--red);
+  border-radius: 50%;
+
+  &.js-ativo {
+    background: var(--green);
+  }
+}

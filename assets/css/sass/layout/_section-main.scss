@@ -14,78 +14,66 @@
   @include mediaQuery(md) {
     grid-template-columns: 1fr;
   }
-}
 
-.section-main .section-main__content {
-  display: grid;
-  grid-template-rows: max(150px) max(140px) 30px;
-
-  gap: 22px;
+  &__content {
+    display: grid;
+    grid-template-rows: max(150px) max(140px) 30px;
   
-  font-size: var(--font-normal);
-  font-weight: lighter;
-  line-height: 1.8;
-
-  .section-main__logo {
-    width: grid(9);
-    grid-row: 1 / 1;
-    margin-bottom: 60px;
-  }
-
-  .section-main__info{
-    grid-row: 2 / 2;
+    gap: 22px;
     
-    p {
-      border-right: 2px  solid var(--brown);
-      padding-top: 10px;
-      padding-bottom: 10px;
+    font-size: var(--font-normal);
+    font-weight: lighter;
+    line-height: 1.8;
+  
+    .section-main__logo {
+      width: grid(9);
+      grid-row: 1 / 1;
+      margin-bottom: 60px;
+      /* flex */
     }
   
-    /* text */
-    p:first-child {
-      border-bottom: 2px  solid var(--brown);
-    }
-  
-    span.js-disponivel {
-      display: inline-block;
+    .section-main__info{
+      grid-row: 2 / 2;
       
-      width: 12px;
-      height: 12px;
-      margin-left: 20px;
+      p {
+        border-right: 2px  solid var(--brown);
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     
-      background: var(--red);
-      border-radius: 50%;
+      /* text */
+      p:first-child {
+        border-bottom: 2px  solid var(--brown);
+      }
+
+      
+    }
   
-      &.js-ativo {
-        background: var(--green);
+    .section-main__call {
+      grid-row: 3;
+      color: var(--dark-gray);
+    
+      &::after {
+        content: '/ / / /';
+        color: var(--brown);
+    
+        display: block;
+        margin: 60px auto;
+    
+        font-size: 180px;
+        letter-spacing: -70px;
+  
+        @media(max-width: $lg) {
+          display: none;
+        }
+        
       }
     }
   }
 
-  .section-main__call {
-    grid-row: 3;
-    color: var(--dark-gray);
-  
-    &::after {
-      content: '/ / / /';
-      color: var(--brown);
-  
-      display: block;
-      margin: 60px auto;
-  
-      font-size: 180px;
-      letter-spacing: -70px;
-
-      @media(max-width: $lg) {
-        display: none;
-      }
-      
-    }
+  &__image {
+    width: 100%;
+    border: 10px solid #cbc6b9;
   }
 }
 
-
-.section-main .section-main__image{
-  width: 100%;
-  border: 10px solid #cbc6b9;
-}
